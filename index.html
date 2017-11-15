@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Eliza (What's that like?)</title>
+  <script src="//code.responsivevoice.org/responsivevoice.js"></script>
   <script type="text/javascript" src="elizabot.js"></script>
   <script type="text/javascript" src="eliza-whats-that-like-data.js"></script>
-  <script src="//code.responsivevoice.org/responsivevoice.js"></script>
+  <script type="text/javascript" src="copyText.js"></script>
   <script type="text/javascript" src="elizarun.js"></script>
 </head>
 <body onload="window.setTimeout('elizaLoad()',100)">
@@ -15,8 +16,12 @@
       <form name="e_form" onsubmit="elizaStep();return false">
 	<tr><td colspan=2><textarea readonly name="e_display" cols="60" rows="20"></textarea></td></tr>
 	<tr valign="middle">
-	  <td><input type="text" name="e_input" size="50"></td>
-	  <td align="right"><input type="submit" value="Talk"> <input type="reset" value="Reset" onClick="window.setTimeout('elizaReset()',100)"></td>
+	  <td><input type="text" name="e_input" size="38"></td>
+	  <td align="right">
+	    <input type="submit" value="Talk">
+	    <input type="reset" value="Reset" onClick="window.setTimeout('elizaReset()',100)">
+	    <input type="button" value="Save" title="Copy the full log of the conversation to the clipboard" onclick="saveByCopy();">
+	  </td>
 	</tr>
 	<tr>
 	  <td colspan=2>
@@ -102,6 +107,9 @@
   </p>
   <p>
     The source for this project is available <a href="https://github.com/JasonGross/whats-eliza-like" target="_blank">on GitHub</a>.
+  </p>
+  <p>
+    Feedback, comments, suggestions, and appreciations welcome <a href="mailto:jgross@mit.edu">by email</a> or <a href="https://github.com/JasonGross/whats-eliza-like" target="_blank">on GitHub</a>.
   </p>
 </body>
 </html>

@@ -13,6 +13,10 @@ function saveSettings() {
     localStorage['eliza-whats-that-like-current-settings'] = JSON.stringify(settings);
 }
 
+function saveByCopy() {
+    copyTextToClipboard(elizaLines.join('\n'));
+}
+
 function redisplay_and_save() {
     var f = document.forms.e_form;
     localStorage['eliza-whats-that-like-current-log'] = JSON.stringify(elizaLines);
