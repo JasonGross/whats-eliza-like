@@ -90,6 +90,9 @@ var elizaKeywords = [
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "Please, go on.",
      "Say more.  What's that like?"
   ]]
@@ -108,14 +111,23 @@ var elizaKeywords = [
 ]],
 ["emotion", 3, [
  ["* @emotion *", [
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
  ]],
 ]],
 ["remember", 5, [
@@ -124,11 +136,20 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* do you remember *", [
      "What's that like?",
@@ -149,9 +170,15 @@ var elizaKeywords = [
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
-     "(2).  What's that like, for you?"
+     "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?"
   ]],
  ["* did you forget *", [
      "What's that like?",
@@ -164,9 +191,15 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["dreamed", 4, [
@@ -176,9 +209,15 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "goto dream"
   ]]
 ]],
@@ -188,7 +227,10 @@ var elizaKeywords = [
      "What's it like to dream, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["perhaps", 0, [
@@ -197,14 +239,20 @@ var elizaKeywords = [
      "What's speculation like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["name", 15, [
  ["*", [
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["deutsch", 0, [
@@ -253,20 +301,32 @@ var elizaKeywords = [
      "What are computers like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["am", 0, [
  ["* am i *", [
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's it like to consider being (2)?",
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "goto what"
   ]],
  ["* i am *", [
@@ -275,7 +335,10 @@ var elizaKeywords = [
  ["*", [
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["are", 0, [
@@ -284,9 +347,15 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* you are *", [
      "goto you"
@@ -295,11 +364,20 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["your", 0, [
@@ -308,9 +386,15 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["was", 2, [
@@ -318,69 +402,123 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "What's it like to consider being (2)?",
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "goto what"
   ]],
  ["* i was *", [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "What's it like to have been (2)?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* was you *", [
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's (2) like, for you?"
   ]]
 ]],
 ["i", 0, [
  ["* i @desire *", [
      "What's it like to want (3)?",
+     "What's (3) like?",
      "What's (3) like for you?",
-     "What's (3) like, for you?",
+     "What's (3) like, for you?","What is (3) like?",
+     "What is (3) like for you?",
+     "What is (3) like, for you?",
      "(3).  What's that like?",
      "(3).  What's that like for you?",
      "(3).  What's that like, for you?",
+     "(3).  What is that like?",
+     "(3).  What is that like for you?",
+     "(3).  What is that like, for you?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* i am* @sad *", [
+     "What's (3) like?",
      "What's (3) like for you?",
-     "What's (3) like, for you?",
+     "What's (3) like, for you?","What is (3) like?",
+     "What is (3) like for you?",
+     "What is (3) like, for you?",
      "(3).  What's that like?",
      "(3).  What's that like for you?",
      "(3).  What's that like, for you?",
+     "(3).  What is that like?",
+     "(3).  What is that like for you?",
+     "(3).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* i am* @happy *", [
+     "What's (3) like?",
      "What's (3) like for you?",
-     "What's (3) like, for you?",
+     "What's (3) like, for you?","What is (3) like?",
+     "What is (3) like for you?",
+     "What is (3) like, for you?",
      "(3).  What's that like?",
      "(3).  What's that like for you?",
      "(3).  What's that like, for you?",
+     "(3).  What is that like?",
+     "(3).  What is that like for you?",
+     "(3).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* i was *", [
      "goto was"
@@ -389,67 +527,118 @@ var elizaKeywords = [
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
+     "What's (3) like?",
      "What's (3) like for you?",
-     "What's (3) like, for you?",
+     "What's (3) like, for you?","What is (3) like?",
+     "What is (3) like for you?",
+     "What is (3) like, for you?",
      "(3).  What's that like?",
      "(3).  What's that like for you?",
-     "(3).  What's that like, for you?"
+     "(3).  What's that like, for you?",
+     "(3).  What is that like?",
+     "(3).  What is that like for you?",
+     "(3).  What is that like, for you?"
   ]],
  ["* i* @belief *you *", [
      "goto you"
   ]],
  ["* i am *", [
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* i @cannot *", [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
+     "What's (3) like?",
      "What's (3) like for you?",
-     "What's (3) like, for you?",
+     "What's (3) like, for you?","What is (3) like?",
+     "What is (3) like for you?",
+     "What is (3) like, for you?",
      "What's it like to not (3)?",
      "What's it like to not be able to (3)?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* i don't *", [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* i feel *", [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* i * you *", [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["*", [
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["you", 0, [
@@ -460,32 +649,53 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* you* me *", [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* you *", [
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
-     "(2).  What's that like, for you?"
+     "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?"
   ]]
 ]],
 ["yes", 0, [
  ["*", [
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["no", 0, [
@@ -494,15 +704,24 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["*", [
      "What's `no' like?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["my", 2, [
@@ -511,27 +730,45 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* my* @family *", [
      "Family.  What's that like for you?",
      "(3).  What's that like?",
      "(3).  What's that like for you?",
      "(3).  What's that like, for you?",
+     "(3).  What is that like?",
+     "(3).  What is that like for you?",
+     "(3).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* my *", [
      "Your (2).  What's that like?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["can", 0, [
@@ -539,17 +776,29 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]],
  ["* can i *", [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "goto what"
   ]]
 ]],
@@ -557,7 +806,10 @@ var elizaKeywords = [
  ["*", [
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["who", 0, [
@@ -585,6 +837,9 @@ var elizaKeywords = [
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "What are reasons like, for you?"
   ]]
 ]],
@@ -593,9 +848,15 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "goto what"
   ]],
  ["* why can't i *", [
@@ -603,6 +864,9 @@ var elizaKeywords = [
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "goto what"
   ]],
  ["*", [
@@ -612,14 +876,23 @@ var elizaKeywords = [
 ["everyone", 2, [
  ["* @everyone *", [
      "What's (2) like, for you?",
+     "What's (2) like?",
      "What's (2) like for you?",
-     "What's (2) like, for you?",
+     "What's (2) like, for you?","What is (2) like?",
+     "What is (2) like for you?",
+     "What is (2) like, for you?",
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "(2).  What's that like, for you?",
+     "(2).  What is that like?",
+     "(2).  What is that like for you?",
+     "(2).  What is that like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["everybody", 2, [
@@ -642,6 +915,9 @@ var elizaKeywords = [
      "What's that like?",
      "What's that like for you?",
      "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?",
      "What's always like, for you?"
   ]]
 ]],
@@ -650,7 +926,10 @@ var elizaKeywords = [
      "What's similarity like, for you?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]],
 ["like", 10, [
@@ -663,7 +942,10 @@ var elizaKeywords = [
      "What's different like?",
      "What's that like?",
      "What's that like for you?",
-     "What's that like, for you?"
+     "What's that like, for you?",
+     "What is that like?",
+     "What is that like for you?",
+     "What is that like, for you?"
   ]]
 ]]
 
