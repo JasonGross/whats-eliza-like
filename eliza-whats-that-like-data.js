@@ -88,7 +88,7 @@ var elizaKeywords = [
  ["*", [
      "What's that like?",
      "What's that like for you?",
-     "Please go on.",
+     "Please, go on.",
      "Say more.  What's that like?"
   ]]
 ]],
