@@ -6,11 +6,13 @@
   <script type="text/javascript" src="elizabot.js"></script>
   <script type="text/javascript" src="eliza-whats-that-like-data.js"></script>
   <script type="text/javascript" src="copyText.js"></script>
+  <script type="text/javascript" src="langs.js"></script>
   <script type="text/javascript" src="elizarun.js"></script>
   <script type="text/javascript" src="speechrecognition.js"></script>
   <link rel="stylesheet" type="text/css" href="speechrecognition.css" />
+  <link rel="stylesheet" type="text/css" href="eliza.css" />
 </head>
-<body onload="elizaLoad(); speechRecognitionLoad()">
+<body onload="preloadLanguages(); elizaLoad(); speechRecognitionLoad()">
   <center>
     <p></p>
     <h3>Eliza asks: What's that like?</h3>
@@ -124,12 +126,14 @@
       Upgrade to <a href="//www.google.com/chrome">Chrome</a>
       version 25 or later.</p>
   </div>
-  <div id="div_language">
-    <select id="select_language" onchange="updateCountry()"></select>
+  <div id="div_language" class="hidden-setting">
+    <select id="select_language" onchange="updateCountry(); saveSettings()"></select>
     &nbsp;&nbsp;
-    <select id="select_dialect"></select>
+    <select id="select_dialect" onchange="saveSettings()"></select>
   </div>
-
+  <div class="hidden-setting">
+    <label for="wait_ms">Wait <input type="number" id="wait_ms" value="0" onchange="saveSettings()">ms before autosubmitting spoken input.  1000 ms is 1 second.  Use a negative number to require manual submission.</label>
+  </div>
   <p>
     ELIZA is a natural language conversation program described by Joseph Weizenbaum in January 1966.
     This version plays that "what's that like?" game; the goal is to give you the opportunity to look more deeply into what your experience is like.

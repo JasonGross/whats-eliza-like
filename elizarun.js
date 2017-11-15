@@ -4,11 +4,20 @@ var elizaLines = new Array();
 var displayCols = 60;
 var displayRows = 20;
 
+var settings;
+
 function saveSettings() {
     var f = document.forms.e_form;
-    var settings = {
+    var input_lang = langs[document.getElementById('select_language').selectedIndex];
+    if (input_lang === undefined) { input_lang = langs[6]; }
+    var input_dialect = input_lang[1+document.getElementById('select_dialect').selectedIndex];
+    if (input_dialect === undefined) { input_dialect = input_lang[8]; }
+    settings = {
 	'speak':f.speak.checked,
-	'voice':f.voiceselection.value
+	'voice':f.voiceselection.value,
+	'input_language':input_lang[0],
+	'input_dialect':input_dialect[0],
+	'wait_ms':document.getElementById('wait_ms').value
     };
     localStorage['eliza-whats-that-like-current-settings'] = JSON.stringify(settings);
 }
@@ -33,16 +42,39 @@ function redisplay_and_save() {
     f.e_display.value = temp.reverse().join('\n');
 }
 
-function loadSettings() {
+function syncSettings() {
     var f = document.forms.e_form;
+    if (settings['speak']) {
+	f.speak.checked = true;
+    }
+    if (settings['voice']) {
+	f.voiceselection.value = settings['voice'];
+    }
+    if (settings['wait_ms'] !== undefined && settings['wait_ms'] != '' && settings['wait_ms'] !== null) {
+	document.getElementById('wait_ms').value = settings['wait_ms'];
+    }
+    var input_language_idx = undefined;
+    if (settings['input_language'] !== undefined) {
+	for (var i = 0; i < langs.length; i++) {
+	    if (langs[i][0] == settings['input_language']) {
+		input_language_idx = i;
+		updateCountry(i);
+		break;
+	    }
+	}
+	var input_dialect = settings['input_dialect'];
+	if (input_language_idx !== undefined) { document.getElementById('select_language').value = input_language_idx; }
+	if (input_dialect !== undefined) {
+	    document.getElementById('select_dialect').value = input_dialect;
+	}
+    }
+}
+
+function loadSettings() {
     try {
 	settings = JSON.parse(localStorage['eliza-whats-that-like-current-settings']);
-	if (settings['speak']) {
-	    f.speak.checked = true;
-	}
-	if (settings['voice']) {
-	    f.voiceselection.value = settings['voice'];
-	}
+	console.log(settings);
+	syncSettings();
     } catch (err) {
     }
 }
