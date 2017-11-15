@@ -1,3 +1,7 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteCond %{REQUEST_URI} whats-eliza-like
+RewriteRule ^(.*)$ https://jgross.scripts.mit.edu/whats-eliza-like/$1 [R,L]
 ExpiresActive On
 ExpiresDefault "access"
 DirectoryIndex index.html
