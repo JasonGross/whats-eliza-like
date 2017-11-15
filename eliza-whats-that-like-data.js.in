@@ -107,7 +107,7 @@ var elizaKeywords = [
  ["* i remember *", [
      "What's remembering (2) like for you?",
      @default2@,
-     @default2-mid@
+     @default2-mid@,
      @default@
   ]],
  ["* do you remember *", [
