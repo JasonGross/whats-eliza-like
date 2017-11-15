@@ -221,7 +221,7 @@ var elizaKeywords = [
      @default2-mid@,
      @default2@,
      "What's it like to consider being (2)?",
-     @default@
+     @default@,
      "goto what"
   ]],
  ["* i am *", [
@@ -389,7 +389,7 @@ var elizaKeywords = [
   ]],
  ["* can i *", [
      @default2@,
-     @default@
+     @default@,
      "goto what"
   ]]
 ]],

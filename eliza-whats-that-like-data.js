@@ -238,7 +238,7 @@ var elizaKeywords = [
      "(2).  What's that like for you?",
      "What's it like to consider being (2)?",
      "What's that like?",
-     "What's that like for you?"
+     "What's that like for you?",
      "goto what"
   ]],
  ["* i am *", [
@@ -470,7 +470,7 @@ var elizaKeywords = [
      "(2).  What's that like?",
      "(2).  What's that like for you?",
      "What's that like?",
-     "What's that like for you?"
+     "What's that like for you?",
      "goto what"
   ]]
 ]],
