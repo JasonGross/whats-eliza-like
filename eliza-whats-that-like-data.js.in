@@ -86,8 +86,7 @@ var elizaKeywords = [
 
 ["xnone", 0, [
  ["*", [
-     "What's that like?",
-     "What's that like for you?",
+     @default@,
      "Please go on.",
      "Say more.  What's that like?"
   ]]
@@ -107,12 +106,9 @@ var elizaKeywords = [
 ["remember", 5, [
  ["* i remember *", [
      "What's remembering (2) like for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's (2) like for you?",
-     "What's (2) like, for you?"
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default2-mid@
+     @default@
   ]],
  ["* do you remember *", [
      "What's that like?",
@@ -130,10 +126,8 @@ var elizaKeywords = [
      "What's forgetting like?",
      "What's forgetting like for you, right now?",
      "What's forgetting (2) like, for you?",
-     "What's that like?",
-     "What's that like for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?"
+     @default@,
+     @default2@
   ]],
  ["* did you forget *", [
      "What's that like?",
@@ -143,20 +137,16 @@ var elizaKeywords = [
 ]],
 ["if", 3, [
  ["* if *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]]
 ]],
 ["dreamed", 4, [
  ["* i dreamed *", [
      "What was dreaming (2) like for you?",
      "What's dreaming like, for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?",
+     @default2@,
+     @default@,
      "goto dream"
   ]]
 ]],
@@ -164,22 +154,19 @@ var elizaKeywords = [
  ["*", [
      "What's it like to dream?",
      "What's it like to dream, for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["perhaps", 0, [
  ["*", [
      "What's uncertainty like for you?",
      "What's speculation like, for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["name", 15, [
  ["*", [
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["deutsch", 0, [
@@ -226,169 +213,122 @@ var elizaKeywords = [
 ["computer", 50, [
  ["*", [
      "What are computers like, for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["am", 0, [
  ["* am i *", [
-     "What's (2) like for you?",
-     "What's (2) like, for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
+     @default2-mid@,
+     @default2@,
      "What's it like to consider being (2)?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
      "goto what"
   ]],
  ["* i am *", [
      "goto i"
   ]],
  ["*", [
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["are", 0, [
  ["* are you *", [
      "What's (2) like for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]],
  ["* you are *", [
      "goto you"
   ]],
  ["* are *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's (2) like for you?",
-     "What's (2) like, for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default2-mid@,
+     @default@
   ]]
 ]],
 ["your", 0, [
  ["* your *", [
      "What's (2) like, for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]]
 ]],
 ["was", 2, [
  ["* was i *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's (2) like for you?",
-     "What's (2) like, for you?",
+     @default2@,
+     @default2-mid@,
      "What's it like to consider being (2)?",
-     "What's that like?",
-     "What's that like for you?",
+     @default@,
      "goto what"
   ]],
  ["* i was *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's (2) like for you?",
-     "What's (2) like, for you?",
+     @default2@,
+     @default2-mid@,
      "What's it like to have been (2)?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]],
  ["* was you *", [
-     "What's that like?",
-     "What's that like for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
+     @default@,
+     @default2@,
      "What's (2) like, for you?"
   ]]
 ]],
 ["i", 0, [
  ["* i @desire *", [
      "What's it like to want (3)?",
-     "What's (3) like for you?",
-     "What's (3) like, for you?",
-     "(3).  What's that like?",
-     "(3).  What's that like for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default3-mid@,
+     @default3@,
+     @default2@,
+     @default@
   ]],
  ["* i am* @sad *", [
-     "What's (3) like for you?",
-     "What's (3) like, for you?",
-     "(3).  What's that like?",
-     "(3).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default3-mid@,
+     @default3@,
+     @default@
   ]],
  ["* i am* @happy *", [
-     "What's (3) like for you?",
-     "What's (3) like, for you?",
-     "(3).  What's that like?",
-     "(3).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default3-mid@,
+     @default3@,
+     @default@
   ]],
  ["* i was *", [
      "goto was"
   ]],
  ["* i @belief i *", [
-     "What's that like?",
-     "What's that like for you?",
-     "What's (3) like for you?",
-     "What's (3) like, for you?",
-     "(3).  What's that like?",
-     "(3).  What's that like for you?"
+     @default@,
+     @default3-mid@,
+     @default3@
   ]],
  ["* i* @belief *you *", [
      "goto you"
   ]],
  ["* i am *", [
-     "What's (2) like for you?",
-     "What's (2) like, for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2-mid@,
+     @default2@,
+     @default@
   ]],
  ["* i @cannot *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's (3) like for you?",
-     "What's (3) like, for you?",
+     @default2@,
+     @default3-mid@,
      "What's it like to not (3)?",
      "What's it like to not be able to (3)?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]],
  ["* i don't *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]],
  ["* i feel *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's (2) like for you?",
-     "What's (2) like, for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default2-mid@,
+     @default@
   ]],
  ["* i * you *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]],
  ["*", [
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["you", 0, [
@@ -396,88 +336,66 @@ var elizaKeywords = [
      "goto alike"
   ]],
  ["* you are *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]],
  ["* you* me *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]],
  ["* you *", [
-     "What's that like?",
-     "What's that like for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?"
+     @default@,
+     @default2@
   ]]
 ]],
 ["yes", 0, [
  ["*", [
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["no", 0, [
  ["* no one *", [
      "What's it like, that no one (2)?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]],
  ["*", [
      "What's `no' like?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["my", 2, [
  ["$ * my *", [
      "Your (2).  What's that like?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]],
  ["* my* @family *", [
      "Family.  What's that like for you?",
-     "(3).  What's that like?",
-     "(3).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default3@,
+     @default@
   ]],
  ["* my *", [
      "Your (2).  What's that like?",
-     "What's (2) like for you?",
-     "What's (2) like, for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2-mid@,
+     @default2@,
+     @default@
   ]]
 ]],
 ["can", 0, [
  ["* can you *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
   ]],
  ["* can i *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2@,
+     @default@
      "goto what"
   ]]
 ]],
 ["what", 0, [
  ["*", [
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["who", 0, [
@@ -502,23 +420,19 @@ var elizaKeywords = [
 ]],
 ["because", 0, [
  ["*", [
-     "What's that like?",
-     "What's that like for you?",
+     @default@,
      "What are reasons like, for you?"
   ]]
 ]],
 ["why", 0, [
  ["* why don't you *", [
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?",
+     @default2@,
+     @default@,
      "goto what"
   ]],
  ["* why can't i *", [
      "What's it like to not (2)?",
-     "What's that like?",
-     "What's that like for you?",
+     @default@,
      "goto what"
   ]],
  ["*", [
@@ -528,12 +442,9 @@ var elizaKeywords = [
 ["everyone", 2, [
  ["* @everyone *", [
      "What's (2) like, for you?",
-     "What's (2) like for you?",
-     "What's (2) like, for you?",
-     "(2).  What's that like?",
-     "(2).  What's that like for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default2-mid@,
+     @default2@,
+     @default@
   ]]
 ]],
 ["everybody", 2, [
@@ -553,16 +464,14 @@ var elizaKeywords = [
 ]],
 ["always", 1, [
  ["*", [
-     "What's that like?",
-     "What's that like for you?",
+     @default@,
      "What's always like, for you?"
   ]]
 ]],
 ["alike", 10, [
  ["*", [
      "What's similarity like, for you?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]],
 ["like", 10, [
@@ -573,8 +482,7 @@ var elizaKeywords = [
 ["different", 0, [
  ["*", [
      "What's different like?",
-     "What's that like?",
-     "What's that like for you?"
+     @default@
   ]]
 ]]
 

@@ -1,10 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Eliza asks: "What's that like?"</title>
+  <title>Eliza (What's that like?)</title>
   <script type="text/javascript" src="elizabot.js"></script>
   <script type="text/javascript" src="eliza-whats-that-like-data.js"></script>
+  <script type="text/javascript" src="elizarun.js"></script>
 </head>
-<body>
-Hi there fff
+<body onload="window.setTimeout('elizaReset()',100)">
+  <center>
+    <p></p>
+    <h3>Eliza asks: What's that like?</h3>
+    <table border=0>
+      <form name="e_form" onsubmit="elizaStep();return false">
+	<tr><td colspan=2><textarea readonly name="e_display" cols="60" rows="20"></textarea></td></tr>
+	<tr valign="middle">
+	  <td><input type="text" name="e_input" size="50"></td>
+	  <td align="right"><input type="submit" value="Talk"> <input type="reset" value="Reset" onClick="window.setTimeout('elizaReset()',100)"></td>
+	</tr>
+      </form>
+    </table>
+  </center>
+
+  <p>
+    ELIZA is a natural language conversation program described by Joseph Weizenbaum in January 1966.
+    It features the dialog between a human user and a computer program representing a mock Rogerian psychotherapist.
+  </p>
+  <p>
+    This instantiation is based on <tt>elizabot.js</tt> by &copy; Norbert Landsteiner 2005 at <a href="http://www.masswerk.at/elizabot" target="_blank">http://www.masswerk.at/elizabot</a>.<br>
+    The implementation is, at present, largely unchanged from that one, while the data driving what they system says was written by Jason Gross.
+  </p>
+  <p>
+    The source for this project is available <a href="https://github.com/JasonGross/whats-eliza-like" target="_blank">on GitHub</a>.
+  </p>
 </body>
 </html>
