@@ -74,7 +74,7 @@ function elizaLoad() {
 function maybeSpeak(text) {
     var f = document.forms.e_form;
     if (f.speak.checked) {
-	responsiveVoice.speak(text, f.voiceselection.value);
+	responsiveVoice.speak(text, f.voiceselection.value, {rate: 0.75});
     }
 }
 

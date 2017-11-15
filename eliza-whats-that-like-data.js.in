@@ -62,6 +62,7 @@ var elizaSynons = {
 "desire": ["want", "need"],
 "everyone": ["everybody", "nobody", "noone"],
 "family": ["mother", "mom", "father", "dad", "sister", "brother", "wife", "children", "child"],
+"emotion": [@emotions@],
 "happy": ["elated", "glad", "better"],
 "sad": ["unhappy", "depressed", "sick"]
 };
@@ -102,6 +103,13 @@ var elizaKeywords = [
  ["*", [
      "What's apologizing like for you?"
   ]]
+]],
+["emotion", 3, [
+ ["* @emotion *", [
+     @default2-mid@,
+     @default2@,
+     @default@
+ ]],
 ]],
 ["remember", 5, [
  ["* i remember *", [
@@ -377,7 +385,6 @@ var elizaKeywords = [
   ]],
  ["* my *", [
      "Your (2).  What's that like?",
-     @default2-mid@,
      @default2@,
      @default@
   ]]
@@ -497,7 +504,8 @@ var elizaPostTransforms = [
 	/Are they( always)? me\b/, "it is$1 me",
 	/\bthat your( own)? (\w+)( now)? \?/, "that you have your$1 $2 ?",
 	/\bI to have (\w+)/, "I have $1",
-	/Earlier you said your( own)? (\w+)( now)?\./, "Earlier you talked about your $2."
+	/Earlier you said your( own)? (\w+)( now)?\./, "Earlier you talked about your $2.",
+        /^\.\s+/, ""
 ];
 
 // eof

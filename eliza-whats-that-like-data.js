@@ -62,6 +62,7 @@ var elizaSynons = {
 "desire": ["want", "need"],
 "everyone": ["everybody", "nobody", "noone"],
 "family": ["mother", "mom", "father", "dad", "sister", "brother", "wife", "children", "child"],
+"emotion": ["affectionate", "compassionate", "friendly", "loving", "open hearted", "sympathetic", "tender", "warm", "confident", "empowered", "open", "proud", "safe", "secure", "engaged", "absorbed", "alert", "curious", "engrossed", "enchanted", "entranced", "fascinated", "interested", "intrigued", "involved", "spellbound", "stimulated", "inspired", "amazed", "awed", "wonder ", "excited", "amazed", "animated", "ardent", "aroused", "astonished", "dazzled", "eager", "energetic", "enthusiastic", "giddy", "invigorated", "lively", "passionate", "surprised", "vibrant", "exhilarated", "blissful", "ecstatic", "elated", "enthralled", "exuberant", "radiant", "rapturous", "thrilled", "grateful", "appreciative", "moved", "thankful", "touched", "hopeful", "expectant", "encouraged", "optimistic", "joyful", "amused", "delighted", "glad", "happy", "jubilant", "pleased", "tickled", "peaceful", "calm", "clear headed", "comfortable", "centered", "content", "equanimous", "fulfilled", "mellow", "quiet", "relaxed", "relieved", "satisfied", "serene", "still", "tranquil", "trusting", "refreshed", "enlivened", "rejuvenated", "renewed", "rested", "restored", "revived", "afraid", "apprehensive", "dread", "foreboding", "frightened", "panicked", "petrified", "scared", "suspicious", "terrified", "wary", "worried", "anxious", "tense", "annoyed", "aggravated", "dismayed", "disgruntled", "displeased", "exasperated", "frustrated", "impatient", "irritated", "cranky", "angry", "enraged", "furious", "incensed", "indignant", "irate", "livid", "outraged", "resentful", "confused", "ambivalent", "baffled", "bewildered", "dazed", "hesitant", "lost", "mystified", "perplexed", "puzzled", "torn", "embarrassed", "ashamed", "chagrined", "flustered", "mortified", "self-conscious", "aversion", "animosity", "appalled", "contempt", "disgusted", "dislike", "hate", "horrified", "hostile", "repulsed", "yearning", "envious", "jealous", "longing", "nostalgic", "pining", "wistful", "disquiet", "agitated", "alarmed", "discombobulated", "disconcerted", "disturbed", "distressed", "perturbed", "rattled", "edgy", "restless", "shocked", "startled", "surprised", "troubled", "uncomfortable", "uneasy", "unsettled", "upset", "fatigue", "beat", "burnt out", "depleted", "exhausted", "lethargic", "listless", "sleepy", "tired", "weary", "worn out", "pain", "agony", "anguished", "bereaved", "devastated", "grief", "heartbroken", "hurt", "lonely", "miserable", "regret", "sad", "hopeless", "depressed", "dejected", "despair", "despondent", "disappointed", "discouraged", "disheartened", "forlorn"],
 "happy": ["elated", "glad", "better"],
 "sad": ["unhappy", "depressed", "sick"]
 };
@@ -103,6 +104,16 @@ var elizaKeywords = [
  ["*", [
      "What's apologizing like for you?"
   ]]
+]],
+["emotion", 3, [
+ ["* @emotion *", [
+     "What's (2) like for you?",
+     "What's (2) like, for you?",
+     "(2).  What's that like?",
+     "(2).  What's that like for you?",
+     "What's that like?",
+     "What's that like for you?"
+ ]],
 ]],
 ["remember", 5, [
  ["* i remember *", [
@@ -589,7 +600,8 @@ var elizaPostTransforms = [
 	/Are they( always)? me\b/, "it is$1 me",
 	/\bthat your( own)? (\w+)( now)? \?/, "that you have your$1 $2 ?",
 	/\bI to have (\w+)/, "I have $1",
-	/Earlier you said your( own)? (\w+)( now)?\./, "Earlier you talked about your $2."
+	/Earlier you said your( own)? (\w+)( now)?\./, "Earlier you talked about your $2.",
+        /^\.\s+/, ""
 ];
 
 // eof
