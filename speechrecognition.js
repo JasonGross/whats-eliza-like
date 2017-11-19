@@ -145,6 +145,7 @@ function capitalize(s) {
 function startButton(event) {
   if (recognizing) {
     recognition.stop();
+    document.forms.e_form.e_input.readOnly = false;
     return;
   }
   final_transcript = '';
